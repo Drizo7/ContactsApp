@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/rel0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.UserListFragment">
+        <LinearLayout
+            android:id="@+id/linea"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/userRecyclerView"
+                tools:listitem="@layout/user_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvUser"
+            android:textSize="19sp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold|normal"
+            android:gravity="center"
+            android:layout_below="@id/linea"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="180dp"
+            android:text="@string/add_the_user_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="19dp"
+            app:shapeAppearanceOverlay="@style/FabShape5"
+            android:elevation="15dp"
+            app:rippleColor="#FF0000"
+            app:tint="@color/white"
+            app:backgroundTint="@color/purple_500"
+            android:src="@android:drawable/ic_input_add" />
+
+    </RelativeLayout>
+
+
+
+</layout>

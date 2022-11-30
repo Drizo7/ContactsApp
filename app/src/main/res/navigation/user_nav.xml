@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_nav"
+    app:startDestination="@id/userListFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.adrian.contacts.view.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" >
+        <action
+            android:id="@+id/UserToAddInfo"
+            app:destination="@id/addInfoFragment" />
+        <action
+            android:id="@+id/UserToUpdateInfo"
+            app:destination="@id/updateInfoFragment" />
+        <action
+            android:id="@+id/UserListToDetail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInfoFragment"
+        android:name="com.adrian.contacts.view.AddInfoFragment"
+        android:label="fragment_add_info"
+        tools:layout="@layout/fragment_add_info" >
+        <action
+            android:id="@+id/AddToUserList"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateInfoFragment"
+        android:name="com.adrian.contacts.view.UpdateInfoFragment"
+        android:label="fragment_update_info"
+        tools:layout="@layout/fragment_update_info" >
+        <action
+            android:id="@+id/UpdateToUserList"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.adrian.contacts.view.DetailFragment"
+        android:label="DetailFragment">
+
+        <argument
+            android:name="UserDatas"
+            app:argType="com.adrian.contacts.model.UserDatas"
+            android:defaultValue="@null"
+            app:nullable="true"
+            />
+        <action
+            android:id="@+id/DetailToListUser"
+            app:destination="@id/userListFragment" />
+    </fragment>
+</navigation>

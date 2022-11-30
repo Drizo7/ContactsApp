@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.DetailFragment">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/mUser"
+                    android:src="@drawable/ic_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"/>
+                <View
+                    android:alpha=".4"
+                    android:background="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/nameUser"
+                        android:text="@string/app_name"
+                        android:textSize="19sp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:alpha=".4"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/mob"
+                            android:text="Mb.58746"
+                            android:textStyle="bold|normal"
+                            android:textSize="16sp"
+                            android:textColor="#706464"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/age"
+                            android:text="BirthData: 15/875/254"
+                            android:textStyle="bold|normal"
+                            android:textSize="16sp"
+                            android:textColor="#706464"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <View
+                        android:alpha=".4"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/emailU"
+                            android:text="@string/app_name"
+                            android:textSize="19sp"
+                            android:layout_margin="10dp"
+                            android:textColor="#073051"
+                            android:textStyle="bold|normal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View
+                        android:alpha=".4"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="More Information"
+                            android:textSize="19sp"
+                            android:layout_margin="10dp"
+                            android:textColor="#CF0348"
+                            android:textStyle="bold|normal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/moreU"
+                            android:text="@string/app_name"
+                            android:textSize="19sp"
+                            android:layout_margin="10dp"
+                            android:textColor="#151827"
+                            android:textStyle="bold|normal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+</layout>
